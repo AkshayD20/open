@@ -24,12 +24,10 @@
 <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
 <body>
-
-
 	<div id="container">
 
 		<header>
-			<h1 style="background-color: #d63847c2;">Bus Booking</h1>
+			<h1 style="background-color: #d63847c2;">SP Bus Booking</h1>
 		</header>
 
 		<nav>
@@ -37,17 +35,7 @@
 
 
 				<ul>
-					<!-- <form method="get" class="searchform" action="SearchRoute.jsp">
-						<li class="start"><input type="text" placeholder="FROM"
-							name="from" style="margin: 10px;" required="true" /></li>
-						<li class="start"><input type="text" placeholder="TO"
-							name="to" style="margin: 10px;" required="true" /></li>
-						<li class="start"><input type="date" placeholder="Date"
-							name="date" style="margin: 10px;" required="true" /></li>
-						<li class="start"><input type="submit" value="GO"
-							style="margin: 10px; color: #fff; background-color: #d63847; display: inline-block; border-bottom-color: #215DA1; padding: 8px 15px; text-decoration: none; text-transform: uppercase;" /></li>
-					</form> -->
-					<form method="get" class="searchform" action="SearchRoute.jsp">
+							<form method="get" class="searchform" action="SearchRoute.jsp">
 						<li class="start"><select name="from">
 								<option value="0" >Source</option>
 								<%
@@ -92,6 +80,11 @@
 							name="date" style="margin: 10px;" required="true" /></li>
 						<li class="start"><input type="submit" value="GO"
 							style="margin: 10px; color: #fff; background-color: #d63847; display: inline-block; border-bottom-color: #215DA1; padding: 8px 15px; text-decoration: none; text-transform: uppercase;" /></li>
+						<li class="start"
+							style="margin: 8px; color: #fff; background-color: #d63847; display: inline-block; border-bottom-color: #215DA1; padding: 8px 15px; text-decoration: none; text-transform: uppercase;">WellCome
+							${name}</li>
+						<li><a href="LogOut"><input type="button" value="LogOut"></a>
+						</li>
 					</form>
 				</ul>
 
@@ -111,9 +104,22 @@
 						<ul class="blocklist">
 
 							<li><a class="selected" href="index.jsp">Home Page</a></li>
+							<li><a href="routeDetails.jsp">Route Details</a></li>
+							<li><a href="busDetails.jsp">Bus Details</a></li>
+							<li><a href="driverDetails.jsp">Drive Details</a></li>
+							<li><a href="conductorDetails.jsp">Conductor Details</a></li>
+							<li><a href="busRouteDetails.jsp">BusRoute Details</a></li>
 						</ul>
 					</li>
-			
+					<!-- 					<li> -->
+					<!-- 						<h4>Categories</h4> -->
+					<!-- 						<ul> -->
+					<!-- 							<li><a href="index.html">Home Page</a></li> -->
+					<!-- 							<li><a href="examples.html">Style Examples</a></li> -->
+					<!-- 							<li><a href="two-column.html">Two column layout example</a></li> -->
+
+					<!-- 						</ul> -->
+					<!-- 					</li> -->
 				</ul>
 
 			</aside>
@@ -123,7 +129,7 @@
 				<article>
 
 
-					<h2>${result}<br>Introduction  Bus Booking
+					<h2>${result}<br>Introduction Sp Bus Booking
 					</h2>
 					<div class="article-info">
 						Posted on
@@ -175,9 +181,9 @@
 								<form method="get" class="searchform" action="Login"
 									style="border-bottom-style: solid; border: 1px;">
 									<input type="text" size="32" value="" name="name" class="s"
-										placeholder="USER-NAME" style="margin: 10px;" required="true" /> <br> <input
+										placeholder="USER-NAME" style="margin: 10px;" /> <br> <input
 										type="password" size="32" value="" name="upass" class="s"
-										placeholder="PASSWORD" style="margin: 10px;" required="true" /> <a href="#"
+										placeholder="PASSWORD" style="margin: 10px;" /> <a href="#"
 										style="margin-left: 100px; color: #d63847;">Forgotten
 										Password..?</a><br> <input type="submit" value="LOGIN"
 										style="margin: 10px; color: #fff; background-color: #d63847; display: inline-block; border-bottom-color: #215DA1; padding: 8px 15px; text-decoration: none; text-transform: uppercase;" />
@@ -223,6 +229,42 @@
 		</div>
 		<footer>
 			<div class="footer-content width">
+				<!-- 				<ul> -->
+				<!-- 					<li><h4>Proin accumsan</h4></li> -->
+				<!-- 					<li><a href="#">Rutrum nulla a ultrices</a></li> -->
+				<!-- 					<li><a href="#">Blandit elementum</a></li> -->
+				<!-- 					<li><a href="#">Proin placerat accumsan</a></li> -->
+				<!-- 					<li><a href="#">Morbi hendrerit libero </a></li> -->
+				<!-- 					<li><a href="#">Curabitur sit amet tellus</a></li> -->
+				<!-- 				</ul> -->
+
+				<!-- 				<ul> -->
+				<!-- 					<li><h4>Condimentum</h4></li> -->
+				<!-- 					<li><a href="#">Curabitur sit amet tellus</a></li> -->
+				<!-- 					<li><a href="#">Morbi hendrerit libero </a></li> -->
+				<!-- 					<li><a href="#">Proin placerat accumsan</a></li> -->
+				<!-- 					<li><a href="#">Rutrum nulla a ultrices</a></li> -->
+				<!-- 					<li><a href="#">Cras dictum</a></li> -->
+				<!-- 				</ul> -->
+
+				<!-- 				<ul> -->
+				<!-- 					<li><h4>Iaculis amet</h4></li> -->
+				<!-- 					<li><a href="#">Nam cursus nisi nec</a></li> -->
+				<!-- 					<li><a href="#">Integer lacinia risus </a></li> -->
+				<!-- 					<li><a href="#">Mauris eget ante ut elit</a></li> -->
+				<!-- 					<li><a href="#">Vivamus quis orci et </a></li> -->
+				<!-- 					<li><a href="#">Nam eget tellus</a></li> -->
+
+				<!-- 				</ul> -->
+
+				<!-- 				<ul class="endfooter"> -->
+				<!-- 					<li><h4>Suspendisse</h4></li> -->
+				<!-- 					<li><a href="#">Morbi hendrerit libero </a></li> -->
+				<!-- 					<li><a href="#">Proin placerat accumsan</a></li> -->
+				<!-- 					<li><a href="#">Rutrum nulla a ultrices</a></li> -->
+				<!-- 					<li><a href="#">Curabitur sit amet tellus</a></li> -->
+				<!-- 					<li><a href="#">Donec in ligula nisl.</a></li> -->
+				<!-- 				</ul> -->
 
 				<h4>About us</h4>
 
